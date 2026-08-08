@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Dashboard from './components/Dashboard';
-import About from './components/About';
-import Statefn from './components/Statefn';
-import ShowHidefn from './components/ShowHidefn';
+//import Dashboard from './components/Dashboard';
+//import About from './components/About';
+//import Statefn from './components/Statefn';
+//import ShowHidefn from './components/ShowHidefn';
+import Parent from './Parent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ShowHidefn />
+    <Parent />
   </React.StrictMode>
 );
 

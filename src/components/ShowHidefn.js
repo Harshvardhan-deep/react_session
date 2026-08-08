@@ -22,8 +22,8 @@ const ShowHidefn = () => {
 
             <h2>Show Hide Implementation</h2>
 
-            <button onClick={ShowContentFn}>SHOW</button>
-            <button onClick={HideContentFn}>HIDE</button>
+            <button onClick={ShowContentFn} disabled={status}>SHOW</button>
+            <button onClick={HideContentFn} disabled={!status}>HIDE</button>
 
             <br></br>
 

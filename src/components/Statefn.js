@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 const Statefn = () => {
 
+    // State Variable - to memorize / to temporarily store the value of a variable in memory and to update that value in future
+
     // let num = 0;
     //syntax to create a state variable
     const [count, setCount] = useState(0);

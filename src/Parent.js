@@ -8,8 +8,8 @@ const Parent = () => {
     return (
         <>
 
-            <div style={{ backgroundColor: 'lightblue', padding: '20px' }}>
-                <h2>Parent Component</h2>
+            <div style={{ backgroundColor: 'lightblue', padding: '30px', textAlign: 'center', Margin: '20px' }}>
+                <h1>Parent Component</h1>
 
                 <Child country="INDIA" state="DELHI" pincode="110001" district={district} />
 

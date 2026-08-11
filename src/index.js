@@ -5,14 +5,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 //import Dashboard from './components/Dashboard';
 //import About from './components/About';
-//import Statefn from './components/Statefn';
-//import ShowHidefn from './components/ShowHidefn';
+import Statefn from './components/Statefn';
+import ShowHidefn from './components/ShowHidefn';
 import Parent from './Parent';
+import ClassComp from './components/ClassComp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Parent />
+    <ClassComp />
   </React.StrictMode>
 );
 

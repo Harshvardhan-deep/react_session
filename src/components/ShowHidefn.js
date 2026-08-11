@@ -17,6 +17,10 @@ const ShowHidefn = () => {
         setStatus(false);
     }
 
+    const toogledisplayfn = () => {
+        setStatus(status => !status);
+    }
+
     return (
         <>
 
@@ -26,6 +30,14 @@ const ShowHidefn = () => {
             <button onClick={HideContentFn} disabled={!status}>HIDE</button>
 
             <br></br>
+            <br></br>
+            <br></br>
+
+            <button onClick={toogledisplayfn}>
+                {
+                    status ? 'HIDE CONTENT' : 'SHOW CONTENT'
+                }
+            </button>
 
             {
                 status && <div id='content' style={{ textAlign: 'left', backgroundColor: 'lightblue' }}>

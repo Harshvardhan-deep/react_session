@@ -1,54 +1,53 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class ClassComp extends Component {
 
-    constructor(props) {
+    constructor() {
 
-        super(props);
+        super();
+        console.log("Constructor called");
 
         this.state = {
             count: 0
-        }
+        };
+    }
 
+    componentDidMount() {
+        console.log("Component Did Mount called");
+    }
 
+    shouldComponentUpdate() {
+        console.log('');
+    }
+
+    componentDidUpdate() {
+        console.log("Component Did Update called");
+        return true;
     }
 
     increaseFn = () => {
-        console.log('INCREMENT...');
+        console.log("INCREMENT...");
         this.setState({ count: this.state.count + 1 });
     }
 
-
     decreaseFn = () => {
-        console.log('DECREMENT...');
+        console.log("DECREMENT...");
         this.setState({ count: this.state.count - 1 });
     }
 
     render() {
+        console.log("Render called");
         return (
             <>
-                <h2 id='numdisplay'>Class Component - State Variable</h2>
+                <h1>Class Component</h1>
 
-                <div style={{ textAlign: 'center', backgroundColor: 'green', padding: '6px' }}>
+                <h3>NUM - {this.state.count}</h3>
 
-                    <h3>NUM - {this.state.count}</h3>
-
-                    <br></br>
-
-                    <button onClick={this.increaseFn}>INCREMENT</button>
-                    <button onClick={this.decreaseFn}>DECREMENT</button>
-
-                </div>
-
-                <div>
-
-                </div>
-
+                <button onClick={this.increaseFn}>INCREMENT</button>
+                <button onClick={this.decreaseFn}>DECREMENT</button>
             </>
         )
     }
-
-
 }
 
 export default ClassComp;

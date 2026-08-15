@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import Dashboard from './components/Dashboard';
-//import About from './components/About';
+import Dashboard from './components/Dashboard';
+import About from './components/About';
 import Statefn from './components/Statefn';
 import ShowHidefn from './components/ShowHidefn';
 import Parent from './Parent';
 import ClassComp from './components/ClassComp';
+import InputHandling from './components/InputHandling';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClassComp />
+    <InputHandling />
   </React.StrictMode>
 );
 

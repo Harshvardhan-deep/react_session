@@ -16,14 +16,14 @@ class ClassComp extends Component {
         console.log("Component Did Mount called");
     }
 
-    shouldComponentUpdate() {
-        console.log('');
+    /*shouldComponentUpdate() {
+        console.log("Component Update......");
     }
 
     componentDidUpdate() {
-        console.log("Component Did Update called");
-        return true;
-    }
+            console.log("Component Did Update called");
+            return true;
+        }*/
 
     increaseFn = () => {
         console.log("INCREMENT...");
@@ -36,15 +36,20 @@ class ClassComp extends Component {
     }
 
     render() {
-        console.log("Render called");
+        console.log("Render called....");
+
+
         return (
             <>
-                <h1>Class Component</h1>
+                <h1 style={{textAlign: "center"}}>Class Component</h1>
 
-                <h3>NUM - {this.state.count}</h3>
+                <div style={{backgroundColor: "grey"}}>
+                    <h3>NUM = {this.state.count}</h3>
 
-                <button onClick={this.increaseFn}>INCREMENT</button>
-                <button onClick={this.decreaseFn}>DECREMENT</button>
+                    <button onClick={this.increaseFn}>INCREMENT</button>
+                    <button onClick={this.decreaseFn}>DECREMENT</button>
+
+                </div>
             </>
         )
     }
